@@ -8,6 +8,7 @@ export const Container = styled.div`
   margin-top: 20px;
 
   border-bottom: 1px solid #ddd;
+
 `;
 
 export const Numbers = styled.span`
