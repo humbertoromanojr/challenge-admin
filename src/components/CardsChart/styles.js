@@ -5,9 +5,9 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 12px 12px 12px 12px;
+  padding: 12px 12px 0px 12px;
   max-width: 322px;
-  height: 19%;
+  height: auto;
   font-family: Muli;
   font-style: normal;
   font-weight: bold;
