@@ -108,13 +108,13 @@ class Overview extends PureComponent {
 
           <ContainerChart>
             <div id="chart">
-            <header>
-              <h3>Today's trends</h3>
-              <span>{formatDistance(new Date(2020, 2, 10), new Date(2020, 2, 9), {
-                  locale: ptBR,
-                })}
-              </span>
-            </header>
+              <header>
+                <h3>Today's trends</h3>
+                <span>{formatDistance(new Date(2020, 2, 10), new Date(2020, 2, 9), {
+                    locale: ptBR,
+                  })}
+                </span>
+              </header>
               <ReactApexChart
                 options={this.state.chart04.options}
                 series={this.state.chart04.series}

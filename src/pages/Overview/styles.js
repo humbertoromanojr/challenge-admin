@@ -21,6 +21,7 @@ export const ContainerChart = styled.section`
   flex-direction: row;
   justify-content: space-between;
   margin: 0px 0px 30px 0px;
+  padding: 0px 0px 0px 20px;
   max-width: 1122px;
 
   background: #FFFFFF;
@@ -29,7 +30,7 @@ export const ContainerChart = styled.section`
 
   & header {
     display: block;
-    padding: 20px 0px 0px 20px;
+    padding: 20px 0px 0px 0px;
 
     & span {
       font-family: Muli;
@@ -47,6 +48,7 @@ export const ContainerChart = styled.section`
       border-bottom: 1px solid #DFE0EB;
       border-left: 1px solid #DFE0EB;
       border-collapse: collapse;
+      height: 20%;
     }
 
     & div:last-child {
@@ -58,10 +60,6 @@ export const ContainerChart = styled.section`
 export const ContainerCardsFooter = styled.section`
   display: flex;
   flex-direction: row;
-
-/*   & div:last-child {
-    border-bottom: 1px solid #fff;
-  } */
 `;
 
 export const CreateNewTask = styled.div`
