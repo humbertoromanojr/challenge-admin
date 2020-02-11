@@ -1,10 +1,11 @@
 import React, { PureComponent } from 'react';
 import ReactApexChart from 'react-apexcharts';
+import Button from '@material-ui/core/Button';
 
 import { formatDistance } from 'date-fns';
 import { ptBR } from 'date-fns/esm/locale';
 
-import SectionTitleItem from '../../components/SectionTitleItem';
+import CardsTitleItems from '../../components/CardsTitleItems';
 import HeaderTitle from '../../components/HeaderTitle';
 import UnresolvedTicketsItems from '../../components/UnresolvedTicketsItems';
 import CardsChart from '../../components/CardsChart';
@@ -16,7 +17,8 @@ import {
   Content,
   ContainerCards,
   ContainerChart,
-  ContainerCardsFooter
+  ContainerCardsFooter,
+  CreateNewTask
 } from './styles';
 
 class Overview extends PureComponent {
@@ -84,22 +86,22 @@ class Overview extends PureComponent {
         <Content>
           <ContainerCards>
             <Cards>
-              <SectionTitleItem title="Unresolved" />
+              <CardsTitleItems title="Unresolved" />
               60
             </Cards>
 
             <Cards>
-              <SectionTitleItem title="overdue" />
+              <CardsTitleItems title="overdue" />
               16
             </Cards>
 
             <Cards>
-              <SectionTitleItem title="open" />
+              <CardsTitleItems title="open" />
               43
             </Cards>
 
             <Cards>
-              <SectionTitleItem title="on hold" />
+              <CardsTitleItems title="on hold" />
               64
             </Cards>
           </ContainerCards>
@@ -140,10 +142,13 @@ class Overview extends PureComponent {
             </Cards>
             <Cards size="big">
               <HeaderTitle title="Tasks" subtitle="Today" link="tickets" textLink="View all" />
-              <div>
-                Create new task
-              </div>
-              <TasksItems title="Finish ticket example" typeButton="danger" textButton="URGENT" />
+              <CreateNewTask>
+                <h3>Create new task</h3>
+                <Button variant="contained" color="default">+</Button>
+              </CreateNewTask>
+              <TasksItems title="Finish ticket update" typeButton="danger" textButton="URGENT" />
+              <TasksItems title="Create new ticket example" typeButton="secondary" textButton="NEW" />
+              <TasksItems title="Update ticket report" typeButton="primary" textButton="DEFAULT" />
             </Cards>
           </ContainerCardsFooter>
         </Content>
