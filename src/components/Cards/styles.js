@@ -14,9 +14,9 @@ export const Container = styled.div`
 export const Content = styled.div`
   display: block;
   color: #252733;
-  width: ${props => (props.size === 'big' ? 546 : 262)}px;
+  width: ${props => (props.size === 'big' ? 546 : 258)}px;
   height: ${props => (props.size === 'big' ? 336 : 134)}px;
-  padding: 20px;
+  padding: 20px 0px;
   border: 1px solid #ddd;
   border-radius: 8px;
   text-align: center;
