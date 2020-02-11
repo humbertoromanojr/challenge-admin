@@ -16,6 +16,10 @@ export const Container = styled.header`
   letter-spacing: 0.4px;
   color: #252733;
 
+  & div {
+    padding: 0px 10px;
+  }
+
   & a {
     text-decoration: none;
 
@@ -24,6 +28,7 @@ export const Container = styled.header`
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
+    padding: 0px 10px;
 
     text-align: right;
     letter-spacing: 0.2px;
