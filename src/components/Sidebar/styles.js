@@ -12,7 +12,7 @@ export const Container = styled.aside`
   justify-content: space-between;
 
   > div {
-    /*Primeira Div filha*/
+    /*first div child*/
     padding: 25px;
   }
 `;
@@ -28,8 +28,7 @@ export const Nav = styled.ul`
   & hr {
     display: block;
     border: 0.5px solid #444;
-    width: 255px;
-    padding-left: -25px;
+    width: 200px;
   }
 
   li {
