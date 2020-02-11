@@ -58,6 +58,10 @@ export const ContainerChart = styled.section`
 export const ContainerCardsFooter = styled.section`
   display: flex;
   flex-direction: row;
+
+/*   & div:last-child {
+    border-bottom: 1px solid #fff;
+  } */
 `;
 
 export const CreateNewTask = styled.div`
