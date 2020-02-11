@@ -26,6 +26,21 @@ export const ContentSearchAndNotification = styled.div`
   width: 350px;
 `;
 
+export const Notification = styled.div`
+float: right;
+
+& span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #3751FF;
+  padding: 0px 3px;
+  font-size: 12px;
+  color: #fff;
+}
+
+`;
+
 export const SearchAndNotification = styled.div`
   display: flex;
   align-items: center;

@@ -4,6 +4,7 @@ import {
   Container,
   SearchAndNotification,
   ContentSearchAndNotification,
+  Notification,
   User,
   Title,
 } from "./styles";
@@ -19,10 +20,10 @@ const Header = () => (
       <SearchAndNotification>
         <img src={Search} alt="search" />
 
-        <div>
+        <Notification>
+          <img src={Notifications} alt="notifications" />
           <span>3</span>
-          <img src={Notifications} alt="search" />
-        </div>
+        </Notification>
       </SearchAndNotification>
 
       <User>
