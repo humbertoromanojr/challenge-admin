@@ -4,8 +4,8 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 10px;
-  margin-top: 20px;
+  padding: 10px 20px;
+  margin-top: 10px;
 
   border-bottom: 1px solid #ddd;
   border-width: 100%;
@@ -13,14 +13,16 @@ export const Container = styled.div`
   & div {
     display: flex;
     flex-direction: row;
-    padding-left: 5px;
+
+    & span {
+      padding-left: 10px;
+    }
   }
 `;
 
-export const TitleText = styled.h3`
+export const TitleText = styled.span`
   font-family: Muli;
   font-style: normal;
-  font-weight: 600;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.2px;
