@@ -3,7 +3,7 @@ import Header from "./Header";
 import Cards from "./Cards";
 import CardsChart from "./CardsChart";
 import HeaderTitle from "./HeaderTitle";
-import SectionTitleItem from "./SectionTitleItem";
+import CardsTitleItems from "./CardsTitleItems";
 import UnresolvedTicketsItems from "./UnresolvedTicketsItems";
 import TasksItems from "./TasksItems";
 
@@ -13,7 +13,7 @@ export {
   Cards,
   CardsChart,
   HeaderTitle,
-  SectionTitleItem,
+  CardsTitleItems,
   UnresolvedTicketsItems,
   TasksItems
 };
