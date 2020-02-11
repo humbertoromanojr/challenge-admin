@@ -14,7 +14,6 @@ export const Title = styled.h2`
   font-size: 24px;
   line-height: 30px;
   letter-spacing: 0.3px;
-  margin-left: 13px;
 
   /* grayscale / black */
   color: #252733;
