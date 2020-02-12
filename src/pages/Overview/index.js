@@ -146,9 +146,9 @@ class Overview extends PureComponent {
                 <h3>Create new task</h3>
                 <span>+</span>
               </CreateNewTask>
-              <TasksItems title="Finish ticket update" typeButton="danger" textButton="URGENT" />
+              <TasksItems title="Finish ticket update" typeButton="primary" textButton="URGENT" />
               <TasksItems title="Create new ticket example" typeButton="secondary" textButton="NEW" />
-              <TasksItems title="Update ticket report" check="sim" typeButton="primary" textButton="DEFAULT" />
+              <TasksItems title="Update ticket report" check="sim" typeButton="default" textButton="DEFAULT" />
             </Cards>
           </ContainerCardsFooter>
         </Content>
