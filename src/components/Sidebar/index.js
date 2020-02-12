@@ -21,16 +21,16 @@ export default function Sidebar() {
       <div>
         <Nav>
           <li>
-            <Link to="/">Admin</Link>
+            <Link to="/overview">Admin</Link>
           </li>
         </Nav>
 
         <Nav>
           <li>
-            <a href="/"><img src={Overview} alt="Overview" />Overview</a>
+            <Link to="/overview"><img src={Overview} alt="Overview" />Overview</Link>
           </li>
           <li>
-            <a href="/tickets"><img src={Tickets} alt="Tickets" />Tickets</a>
+            <Link to="/tickets"><img src={Tickets} alt="Tickets" />Tickets</Link>
           </li>
           <li>
             <a href="!"><img src={Ideas} alt="Ideas" />Ideas</a>
