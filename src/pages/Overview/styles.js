@@ -2,13 +2,12 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   @import url('https://fonts.googleapis.com/css?family=Muli:400,600&display=swap');
-  display: flex;
+  display: block;
   margin: 40px 0px 0px 0px;
 `;
 
 export const Content = styled.main`
-  display: flex;
-  flex-direction: column;
+  display: block;
 `;
 
 export const ContainerCards = styled.section`
@@ -18,7 +17,6 @@ export const ContainerCards = styled.section`
 
 export const ContainerChart = styled.section`
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   margin: 0px 0px 30px 0px;
   padding: 0px 0px 0px 20px;
@@ -78,10 +76,12 @@ export const CreateNewTask = styled.div`
     color: #C5C7CD;
   }
 
-  & button {
+  & span {
+    font-size: 18px;
     background: #F0F1F7;
-    border-radius: 8px;
-    max-width: 30px;
+    border-radius: 5px;
+    width: 20px;
     margin-right: 20px;
+    color: #9FA2B4;
   }
 `;
