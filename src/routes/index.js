@@ -5,7 +5,7 @@ import { Overview, Tickets } from '../pages'
 // possibility passing parameters in routes
 const routes = () => (
   <Switch>
-    <Route path="/" exact component={Overview} />
+    <Route path="/overview" exact component={Overview} />
     <Route path="/tickets" component={Tickets} />
   </Switch>
 );
