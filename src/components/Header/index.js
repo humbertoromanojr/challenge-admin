@@ -1,4 +1,5 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 
 import {
   Container,
@@ -12,9 +13,12 @@ import {
 import Search from "../../assets/images/search.png";
 import Notifications from "../../assets/images/notifications.svg";
 
-const Header = () => (
+function Header() {
+  let { id } = useParams();
+
+  return (
   <Container>
-    <Title>Overview</Title>
+    <Title>{id}</Title>
 
     <ContentSearchAndNotification>
       <SearchAndNotification>
@@ -35,6 +39,7 @@ const Header = () => (
       </User>
     </ContentSearchAndNotification>
   </Container>
-);
+  );
+}
 
 export default Header;
