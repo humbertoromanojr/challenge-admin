@@ -1,9 +1,18 @@
 import React from 'react';
 import { FaCheckCircle } from 'react-icons/fa';
+
+import { createMuiTheme, withStyles, makeStyles, ThemeProvider } from '@material-ui/core/styles';
+import { orange } from '@material-ui/core/colors';
 import Button from '@material-ui/core/Button';
 import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
 
 import { Container, TitleText } from './styles';
+
+const theme = createMuiTheme({
+  palette: {
+    primary: orange,
+  },
+});
 
 const TasksItems = props => (
   <Container>
@@ -22,7 +31,9 @@ const TasksItems = props => (
       }
       <TitleText>{props.title}</TitleText>
     </div>
-    <Button variant="contained" color={props.typeButton}>{props.textButton}</Button>
+    <ThemeProvider theme={theme}>
+      <Button variant="contained" color={props.typeButton}>{props.textButton}</Button>
+    </ThemeProvider>
   </Container>
 );
 
